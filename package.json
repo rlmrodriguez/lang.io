@@ -1,0 +1,16 @@
+{
+  "name": "langster",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "npx tailwindcss -i ./input.css -o ./assets/css/styles.css --watch",
+    "build": "npx tailwindcss -i ./input.css -o ./assets/css/final.css --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.1.8"
+  }
+}

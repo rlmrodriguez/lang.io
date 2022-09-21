@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="./assets/images/favicon.ico?" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/final.css">
+    <script defer src="/script.js"></script>
+
+    <title>Langio</title>
+  </head>
+
+  <body class="font-notosans">
+    <header id="home" class=" w-full h-screen md:h-full bg-purple-900 pb-8 relative z-50">
+
+      <!-- =============== -->
+      <!--       NAV       -->
+      <!-- =============== -->
+
+      <nav class="bg-slate-100 fixed top-0 w-full md:static shadow">
+        <div class="px-4 py-2 shadow md:flex md:items-center md:justify-between w-full ">
+          <div class="flex justify-between items-center w-full ">
+            <span class="h-[40px] inline-block">
+              <img src="./assets/images/langio-black.png" class="h-full" aria-hidden="true" alt="" decoding="async">
+            </span>
+            <span class="md:hidden cursor-pointer block ">
+              <i id="openBtn" class="fa-solid fa-bars text-3xl toggle"></i>
+              <i id="closeBtn" class="fa-solid fa-x text-3xl hide toggle"></i>
+            </span>
+          </div>
+          <ul id="navList"
+            class="pl-7 h-screen md:flex md:items-center space-y-8 md:space-x-4 md:pl-0 md:space-y-0 md:static absolute bg-slate-100 w-full md:w-auto py-16 md:py-0 -right-[500px] md:h-auto">
+            <li class="text-center"><a href="#start1"
+                class="text-lg hover:text-gray-400 duration-300 focus:bg-orange-400 nav-link">About</a></li>
+            <li class="text-center"><a href="#courses"
+                class="text-lg hover:text-gray-400 duration-300 nav-link">Courses</a></li>
+            <li class="text-center"><a href="#reviews"
+                class="text-lg hover:text-gray-400 duration-300 nav-link">Reviews</a></li>
+            <li class="text-center"><a href="#pricing"
+                class="text-lg hover:text-gray-400 duration-300 nav-link">Pricing</a></li>
+            <li class="text-center"><a href="#articles"
+                class="text-lg hover:text-gray-400 duration-300 nav-link">Articles</a></li>
+            <button class="btn mx-auto nav-link">Get Started</button>
+          </ul>
+
+        </div>
+      </nav>
+
+      <!-- =============== -->
+      <!--       HERO      -->
+      <!-- =============== -->
+
+      <section class="w-full" id="hero">
+        <div class="container w-full pt-24 mx-auto md:flex items-center md:px-7 md:space-x-10">
+          <div class="text-center mx-auto md:flex flex-col justify-center md:w-[60%]">
+            <span class="text-yellow-400 block mt-8 mb-4 md:text-right lg:text-2xl">The Best Language School</span>
+            <h1 class="text-5xl text-white font-bold text-center mb-8 px-4 md:text-right md:px-0 xl:ml-48 lg:text-6xl">
+              Learn Any
+              Language You
+              Want!
+            </h1>
+            <button class="btn block mx-auto mb-8 md:mr-0">Sign Up</button>
+          </div>
+          <div class="md:w-2/3 h-[300px]">
+            <img class="object-cover md:h-[400px] mx-auto md:mx-0 my-4 xl:w-[95%] shadow-md"
+              src="./assets/images/hero.jpg" alt="">
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <!-- =============== -->
+      <!--      START 1    -->
+      <!-- =============== -->
+
+      <section id="start1" class=" bg-stone-100 pt-[70px] md:pt-20">
+        <div class="container mx-auto px-4 md:px-8 pt-8 md:pt-14 pb-28 md:flex items-center justify-center">
+          <div class="md:w-2/5 md:flex flex-col justify-center">
+            <span class="text-pink-400 text-xl lg:text-2xl font-bold pt-12 mb-4 md:mb-2">Start Now!</span>
+            <h2 class="text-4xl lg:text-5xl font-bold mb-4">Learn A New Language!</h2>
+            <p class="text-gray-600 lg:text-lgleading-6 mb-10 lg:w-[90%]">Lorem ipsum dolor sit amet consectetur,
+              adipisicing elit.
+              Quae
+              doloremque
+              sunt
+              nesciunt,
+              expedita quam
+              distinctio.</p>
+          </div>
+          <!-- Cards -->
+          <div class=" space-y-4">
+            <!-- Card 1 -->
+            <div class="flex items-center p-6 rounded-md bg-white shadow-md">
+              <span
+                class="w-10 h-10 flex justify-center items-center mr-4 font-bold text-white bg-orange-400 rounded-full">1</span>
+              <h3 class="font-bold">Early Study Approach</h3>
+            </div>
+            <!-- Card 2 -->
+            <div class="flex items-center p-6 rounded-md bg-white shadow-md">
+              <span
+                class="w-10 h-10 flex justify-center items-center mr-4 font-bold text-white bg-orange-400 rounded-full">2</span>
+              <h3 class="font-bold">Free Teaching Materials</h3>
+            </div>
+            <!-- Card 3 -->
+            <div class="flex items-center p-6 rounded-md bg-white shadow-md">
+              <span
+                class="w-10 h-10 flex justify-center items-center mr-4 font-bold text-white bg-orange-400 rounded-full">3</span>
+              <h3 class="font-bold">Free Mobile Application</h3>
+            </div>
+            <!-- Card 4 -->
+            <div class="flex items-center p-6 rounded-md bg-white shadow-md">
+              <span
+                class="w-10 h-10 flex justify-center items-center mr-4 font-bold text-white bg-orange-400 rounded-full">4</span>
+              <h3 class="font-bold">Accredited School</h3>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- =============== -->
+      <!--     START 2     -->
+      <!-- =============== -->
+
+      <section class="md:pl-15 bg-split-stone-purple" id="start2">
+        <div
+          class="container w-full h-full mx-auto pt-16 px-4 pb-16 flex flex-col md:flex-row justify-center items-center md:gap-10 bg-white md:pl-8 md:pt-20 md:py-24">
+          <div class="space-y-6 md:w-[48%] md:max-w-[500px] order-2 md-order-1">
+            <div class="md:w-80% md:h-[350px]">
+              <img class="w-full h-full mb-8 object-cover rounded-md" src="./assets/images/start2-800.jpg"
+                aria-hidden="true" alt="" loading="lazy" decoding="async">
+            </div>
+            <div class="flex items-center mb-12">
+              <div class="pr-2 lg:pl-4">
+                <h3 class="mb-2 font-bold text-[.9rem] lg:text-[1.2rem]">Watch Intro Video About Our School</span>
+                </h3>
+                <p class="text-gray-600 text-[.7rem] lg:text-[.9rem]">Lorem ipsum dolor sit amet consectetur adipisicing
+                  elit.
+                </p>
+              </div>
+              <div class="relative w-full h-full flex items-center group cursor-pointer">
+                <img class="w-full object-cover rounded-sm" src="./assets/images/start-sm-800.jpg" aria-hidden="true"
+                  alt="" loading="lazy" decoding="async">
+                <div class="w-full h-full bg-slate-700 z-2 absolute top-0 left-0 opacity-60 group-hover:bg-transparent">
+                </div>
+                <i
+                  class="fa-solid fa-circle-play absolute text-orange-300 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-5xl "></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="md:w-[48%] max-w-[450px] md:pr-16 order-1 md:order-2">
+            <span class="text-pink-400 block font-bold mb-2 text-xl lg:text-2xl">High Quality</span>
+            <h2 class="text-4xl lg:text-5xl font-bold mb-6 md:mb-4">Let's Start Your Journey!</h2>
+            <p class="text-gray-600 leading-6 mb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+              voluptas nam
+              sapiente odit quisquam?
+              Dignissimos.</p>
+            <button class="btn mb-8">Make An Appointment</button>
+            <div class="h-32 lg:h-64 mb-4">
+              <img class="w-full h-full object-cover rounded-md" src="./assets/images/start-md-800.jpg"
+                aria-hidden="true" alt="" loading="lazy" decoding="async">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =============== -->
+      <!--     COURSES     -->
+      <!-- =============== -->
+
+      <section id="courses" class="bg-purple-900 pt-[70px] md:pt-0 lg:min-h-screen">
+        <div class="container mx-auto px-4 pt-12 md:pt-40 lg:pt-20 pb-20">
+          <span class="text-yellow-400 font-bold mb-1 text-center block md:text-xl lg:text-2xl">Find A Course</span>
+          <h2 class="text-[2.2rem] text-white font-bold mb-8 md:mb-12 text-center lg:text-5xl">Featured Courses</h2>
+          <div class=" max-w-[950px] mx-auto space-y-6 md:gap-y-16 md:space-y-0 md:flex flex-wrap">
+            <!-- Course 1 -->
+            <div class="max-w-[300px] mx-auto rounded-md overflow-hidden shadow-sm">
+              <div class="h-52 relative">
+                <img class="w-full h-full object-cover" src="./assets/images/course-1-800.jpg" aria-hidden="true" alt=""
+                  loading="lazy" decoding="async">
+                <div class="absolute top-0 left-0 w-full h-full bg-slate-800 opacity-60 hover:bg-transparent"></div>
+                <span
+                  class="absolute top-4 right-4 w-12 h-12 bg-orange-300 flex flex-col justify-center items-center text-xs text-white font-bold rounded-full z-10">
+                  <span class="text-sm">40%</span>
+                  <span>OFF</span>
+                </span>
+              </div>
+              <div class="bg-purple-500 p-4">
+                <h3 class="mb-2 font-bold text-xl text-white">General English</h3>
+                <p class="text-gray-300 leading-6 pb-4 border-b-2 border-purple-900">Lorem, ipsum dolor sit amet
+                  consectetur adipisicing
+                  elit.
+                  Debitis.</p>
+                <div class="pt-3 space-x-2 text-white text-xs">
+                  <span><i class="fa-solid fa-calendar-days pr-0.5"></i> 28 weeks</span>
+                  <span>Starts 27 February</span>
+                </div>
+              </div>
+            </div>
+            <!-- Course 2 -->
+            <div class="max-w-[300px] mx-auto rounded-md overflow-hidden shadow-sm">
+              <div class="h-52 relative">
+                <img class="w-full h-full object-cover" src="./assets/images/course-2-800.jpg" aria-hidden="true" alt=""
+                  loading="lazy" decoding="async">
+                <div class="absolute top-0 left-0 w-full h-full bg-slate-800 opacity-60 hover:bg-transparent"></div>
+                <span
+                  class="absolute top-4 right-4 w-12 h-12 bg-orange-300 flex flex-col justify-center items-center text-xs text-white font-bold rounded-full z-10">
+                  <span class="text-sm">40%</span>
+                  <span>OFF</span>
+                </span>
+              </div>
+              <div class="bg-purple-500 p-4">
+                <h3 class="mb-2 font-bold text-xl text-white ">Business English</h3>
+                <p class="text-gray-300 leading-6 pb-4 border-b-2 border-purple-900">Lorem, ipsum dolor sit amet
+                  consectetur adipisicing
+                  elit.
+                  Debitis.</p>
+                <div class="pt-3 space-x-2 text-white text-xs">
+                  <span><i class="fa-solid fa-calendar-days pr-0.5"></i> 14 weeks</span>
+                  <span>Starts 11 March</span>
+                </div>
+              </div>
+            </div>
+            <!-- Course 3 -->
+            <div class="max-w-[300px] mx-auto rounded-md overflow-hidden shadow-sm">
+              <div class="h-52 relative">
+                <img class="w-full h-full object-cover" src="./assets/images/course-3-800.jpg" aria-hidden="true" alt=""
+                  loading="lazy" decoding="async">
+                <div class="absolute top-0 left-0 w-full h-full bg-slate-800 opacity-60 hover:bg-transparent"></div>
+                <span
+                  class="absolute top-4 right-4 w-12 h-12 bg-orange-300 flex flex-col justify-center items-center text-xs text-white font-bold rounded-full z-10">
+                  <span class="text-sm">40%</span>
+                  <span>OFF</span>
+                </span>
+              </div>
+              <div class="bg-purple-500 p-4">
+                <h3 class="mb-2 font-bold text-xl text-white">Exam Preparation</h3>
+                <p class="text-gray-300 leading-6 pb-4 border-b-2 border-purple-900">Lorem, ipsum dolor sit amet
+                  consectetur adipisicing
+                  elit.
+                  Debitis.</p>
+                <div class="pt-3 space-x-2 text-white text-xs md:text-sm">
+                  <span><i class="fa-solid fa-calendar-days pr-0.5"></i> 8 weeks</span>
+                  <span>Starts 15 April</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =============== -->
+      <!--      REVIEWS    -->
+      <!-- =============== -->
+
+      <section id="reviews" class="pt-[70px] md:pt-0">
+        <div class="container mx-auto max-w-4xl px-4 md:px-12 pt-12 md:py-20 pb-2">
+          <span class="block text-pink-400 font-bold mb-1 md:text-center md:text-xl lg:text-2xl">Reviews</span>
+          <h2 class="text-4xl font-bold mb-6 md:text-center md:mb-10 lg:text-5xl lg:mb-16">What Our Students Say</h2>
+          <!-- Testimonial 1 -->
+          <div class="max-w-[600px] bg-stone-100 pb-8 md:pb-0 mb-6 md:flex md:rounded-l-3xl shadow-md">
+            <div class="w-full ">
+              <img class="w-full h-[230px] md:rounded-l-3xl object-cover" src="./assets/images/customer-1-300.webp"
+                aria-hidden="true" alt="" loading="lazy" decoding="async">
+            </div>
+            <div class="pt-7 px-4 md:px-8">
+              <h3 class="font-bold pb-3 text-lg">Jane Dela Cruz <span
+                  class="font-medium italic text-sm pl-1 text-gray-600">
+                  Traveler</span></h3>
+              <span class="w-1/4 h-0.5 block bg-purple-300 mb-3"></span>
+              <p class="text-gray-600 leading-6 text-xs lg:text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit. Omnis
+                nemo
+                numquam adipisci nulla corrupti?
+                Reiciendis provident in voluptatibus corporis consequatur.</p>
+              <div class="flex items-center pt-4 pb-1 md:pb-4 w-full">
+                <i class="fa-solid fa-star text-yellow-300"></i>
+                <i class="fa-solid fa-star text-yellow-300"></i>
+                <i class="fa-solid fa-star text-yellow-300"></i>
+                <i class="fa-solid fa-star text-yellow-300"></i>
+                <i class="fa-solid fa-star text-yellow-300"></i>
+                <span class="pl-1 text-[.875rem] text-blue-600">5 Stars</span>
+                <span class="ml-auto text-gray-600 text-sm hover:text-red-600 cursor-pointer">Read more <i
+                    class="fa-solid fa-caret-down"></i></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="max-w-[600px] bg-stone-100 pb-8 md:pb-0 mb-6 md:flex md:ml-auto md:rounded-r-3xl shadow-md">
+            <div class="w-full md:order-2">
+              <img class="w-full h-[230px] md:rounded-r-3xl object-cover" src="./assets/images/customer-2-300.webp"
+                aria-hidden="true" alt="" loading="lazy" decoding="async">
+            </div>
+            <div class="pt-7 px-4 md:px-8 md:order-1">
+              <h3 class="font-bold pb-3 text-lg">Jose Manalo <span
+                  class="font-medium italic text-sm pl-1 text-gray-600">
+                  Vlogger</span></h3>
+              <span class="w-1/4 h-0.5 block bg-purple-300 mb-3"></span>
+              <p class="text-gray-600 leading-6 text-xs lg:text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit. Omnis
+                nemo
+                numquam adipisci nulla corrupti?
+                Reiciendis provident in voluptatibus corporis consequatur.</p>
+              <div class="flex items-center pt-4 pb-1 md:pb-4 w-full">
+                <i class="fa-solid fa-star text-yellow-300"></i>
+                <i class="fa-solid fa-star text-yellow-300"></i>
+                <i class="fa-solid fa-star text-yellow-300"></i>
+                <i class="fa-solid fa-star text-yellow-300"></i>
+                <i class="fa-solid fa-star text-yellow-300"></i>
+                <span class="pl-1 text-[.875rem] text-blue-600">5 Stars</span>
+                <span class="ml-auto text-gray-600 text-sm hover:text-red-600 cursor-pointer">Read more <i
+                    class="fa-solid fa-caret-down"></i></span>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <!-- =============== -->
+      <!--     PRICING     -->
+      <!-- =============== -->
+
+      <section id="pricing" class="pt-[70px] md:pt-0 lg:h-screen lg:pt-[90px]">
+        <div class="container mx-auto px-4 pt-8 lg:pt-20 pb-16 text-center">
+          <span class="text-pink-400 font-bold mb-3 md:text-xl lg:text-2xl">Choose a Plan</span>
+          <h2 class="text-4xl font-bold mb-6 md:mb-10 lg:text-5xl">Pricing Plans</h2>
+          <div class="space-y-6 md:space-y-0 flex flex-col items-center md:flex-row md:justify-center md:space-x-2">
+            <!-- Plan 1 -->
+            <div class="max-w-[300px] flex-1 space-y-3 group">
+              <div class="text-center rounded-lg px-4 py-10 border-4 border-pink-400 group-hover:bg-pink-400">
+                <h3 class="text-2xl font-bold pb-2 group-hover:text-white">
+                  Starter
+                </h3>
+                <span class="font-bold text-pink-400 inline-block text-3xl pb-4 relative group-hover:text-white">
+                  $249
+                  <span class="absolute -top-2 -right-[.9rem] text-[.7rem]">99</span>
+                </span>
+                <p class="text-gray-600 leading-6 text-xs lg:text-sm group-hover:text-gray-200">Lorem ipsum dolor sit
+                  amet
+                  consectetur adipisicing
+                  elit.
+                  Facilis dicta quo dignissimos soluta suscipit.</p>
+              </div>
+              <button class="btn text-xs mx-auto">CHOOSE THIS PROGRAM</button>
+            </div>
+            <!-- Plan 2 -->
+            <div class="max-w-[300px] flex-1 space-y-3 mt-7 group">
+              <div class="text-center rounded-lg px-4 py-10 border-4 border-purple-900 group-hover:bg-purple-900">
+                <h3 class="text-2xl font-bold pb-2 group-hover:text-white">
+                  Professional
+                </h3>
+                <span class="font-bold text-pink-400 inline-block text-3xl pb-4 relative group-hover:text-white">
+                  $399
+                  <span class="absolute -top-2 -right-[.9rem] text-[.7rem]">99</span>
+                </span>
+                <p class="text-gray-600 leading-6 text-xs lg:text-sm group-hover:text-gray-200">Lorem ipsum dolor sit
+                  amet
+                  consectetur adipisicing
+                  elit.
+                  Facilis dicta quo dignissimos soluta suscipit.</p>
+              </div>
+              <button class="btn purple text-xs mx-auto">CHOOSE THIS PROGRAM</button>
+            </div>
+            <!-- Plan 3 -->
+            <div class="max-w-[300px] flex-1 space-y-3 group">
+              <div class="text-center rounded-lg px-4 py-10 border-4 border-orange-400 group-hover:bg-orange-400">
+                <h3 class="text-2xl font-bold pb-2 group-hover:text-white">
+                  Enterprise
+                </h3>
+                <span class="font-bold text-pink-400 inline-block text-3xl pb-4 relative group-hover:text-white">
+                  $599
+                  <span class="absolute -top-2 -right-[.9rem] text-[.7rem]">99</span>
+                </span>
+                <p class="text-gray-600 leading-6 text-xs lg:text-sm group-hover:text-gray-200">Lorem ipsum dolor sit
+                  amet
+                  consectetur adipisicing
+                  . Rem
+                  impedit voluptatibus voluptas facilis?</p>
+              </div>
+              <button class="btn orange text-xs mx-auto">CHOOSE THIS PROGRAM</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =============== -->
+      <!--     ARTICLES    -->
+      <!-- =============== -->
+      <section id="articles" class="bg-slate-100 pt-[70px] md:pt-0">
+        <div class=" container mx-auto px-4 py-20 space-y-8 md:flex justify-center items-center md:space-y-0 gap-4 lg:gap-12
+      md:max-h-[650px] max-w-5xl ">
+          <!-- Left Side -->
+          <div class="md:w-3/5 lg:w-2/5">
+            <span class="text-pink-400 font-bold mb-3 md:text-xl lg:text-2xl">Our Articles</span>
+            <h2 class="text-4xl font-bold mb-6">School's News</h2>
+            <!-- Large Card -->
+            <div class="pt-8 md:pt-0 shadow-sm">
+              <div class="md:h-[170px]">
+                <img class="w-full h-full object-cover" src="./assets/images/article-main-800.jpg" aria-hidden="true"
+                  alt="" loading="lazy" decoding="async">
+              </div>
+              <div class="p-4 mt-4 bg-white">
+                <div>
+                  <span class="block w-min py-1 px-2 text-sm font-bold bg-purple-500 text-white">POPULAR</span>
+                  <span class="font-medium text-xs pl-1 text-gray-400">Feb 17, 2022 | </span>
+                  <span class="font-medium italic text-xs text-gray-400"><a href="#"
+                      class="hover:border-b-2 hover:border-slate-400">52 comments</a> </span>
+                </div>
+                <h3 class="text-2xl font-bold py-4 md:py-2"><a href="#">Explore Visual Guide to English Prepositions
+                    (Time)</a></h3>
+                <p class="text-gray-600 leading-6 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Est
+                  sunt itaque natus nobis dolor?</p>
+              </div>
+            </div>
+          </div>
+          <!-- Right Side -->
+          <div class="lg:w-2/5">
+            <div class="w-full flex justify-between">
+              <span
+                class="w-1/2 text-sm font-bold text-center p-3 bg-pink-500 text-white cursor-pointer rounded-t-md hover:bg-pink-400 duration-300">
+                <a href="#articles">RECENT</a></span>
+              <span
+                class="w-1/2 text-sm font-bold text-center p-3 bg-purple-500 text-white cursor-pointer rounded-t-md hover:bg-purple-400 duration-300"><a
+                  href="#articles">POPULAR</a></span>
+            </div>
+            <!-- Cards -->
+            <div class="space-y-4 md:space-y-2">
+              <!-- Small Card 1 -->
+              <div class="relative bg-white md:flex md:p-5 shadow-sm">
+                <img class="w-full h-full object-cover md:w-20 md:h-20" src="./assets/images/article-1-800.jpg"
+                  aria-hidden="true" alt="" loading="lazy" decoding="async">
+                <div
+                  class="absolute bottom-0 py-[0.6rem] px-2  text-center w-full h-auto bg-purple-900 text-white md:static md:bg-white md:text-black md:text-left">
+                  <h3 class="text-1xl font-bold"><a href="#articles">7 Tips To Improve Your Speaking</a></h3>
+                  <span class="text-gray-400 text-xs leading-6">12 Jun 2022 <span
+                      class="pl-1 italic text-xs text-gray-400">5
+                      comments</span></span>
+                </div>
+              </div>
+              <!-- Small Card 2 -->
+              <div class="relative bg-white md:flex md:p-5 shadow-sm">
+                <img class="w-full h-full object-cover md:w-20 md:h-20" src="./assets/images/article-2-800.jpg"
+                  aria-hidden="true" alt="" loading="lazy" decoding="async">
+                <div
+                  class="absolute bottom-0 py-[0.6rem] px-2  text-center w-full h-auto bg-purple-900 text-white md:static md:bg-white md:text-black md:text-left">
+                  <h3 class="text-1xl font-bold"><a href="#articles">Boring English Words</a> </h3>
+                  <span class="text-gray-400 text-xs leading-6">12 Jun 2022 <span
+                      class="pl-1 italic text-xs text-gray-400">4
+                      comments</span></span>
+                </div>
+              </div>
+              <!-- Small Card 3 -->
+              <div class="relative bg-white md:flex md:p-5 shadow-sm">
+                <img class="w-full h-full object-cover md:w-20 md:h-20" src="./assets/images/article-3-800.jpg"
+                  aria-hidden="true" alt="" loading="lazy" decoding="async">
+                <div
+                  class="absolute bottom-0 py-[0.6rem] px-2  text-center w-full h-auto bg-purple-900 text-white md:static md:bg-white md:text-black md:text-left">
+                  <h3 class="text-1xl font-bold"><a href="#articles">10 Mistakes That Speakers Make</a> </h3>
+                  <span class="text-gray-400 text-xs leading-6">12 Jun 2022 <span
+                      class="pl-1 italic text-xs text-gray-400">8
+                      comments</span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =============== -->
+    <!--     FOOTER      -->
+    <!-- =============== -->
+
+    <footer id="footer" class="bg-purple-900">
+      <div
+        class="container mx-auto  h-full px-4  text-white py-12 space-y-6 md:grid grid-cols-3 md:space-y-0 md:pl-12 lg:pl-16 xl:pl-24 gap-y-3 lg:grid-cols-5">
+        <div>
+          <h3 class="font-bold text-[1rem] pb-2">Community</h3>
+          <ul class="space-y-0.5">
+            <li class="text-gray-400 leading-6 text-sm"><a class="hover:text-yellow-400" href="#">Teams</a></li>
+            <li class="text-gray-400 leading-6 text-sm"><a class="hover:text-yellow-400" href="#">Forums</a></li>
+            <li class="text-gray-400 leading-6 text-sm"><a class="hover:text-yellow-400" href="#">Upcoming Events</a>
+            </li>
+            <li class="text-gray-400 leading-6 text-sm"><a class="hover:text-yellow-400" href="#">Affiliates</a></li>
+            <li class="text-gray-400 leading-6 text-sm"><a class="hover:text-yellow-400" href="#">Stay Connected</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-bold text-[1rem] pb-2">About Us</h3>
+          <ul class="space-y-0.5">
+            <li class="text-gray-400 leading-6 text-sm"><a class="hover:text-yellow-400" href="#">History</a></li>
+            <li class="text-gray-400 leading-6 text-sm"><a class="hover:text-yellow-400" href="#">Our Vision</a></li>
+            <li class="text-gray-400 leading-6 text-sm"><a class="hover:text-yellow-400" href="#">We're Hiring</a>
+            </li>
+            <li class="text-gray-400 leading-6 text-sm"><a class="hover:text-yellow-400" href="#">Company Info</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-bold text-[1rem] pb-2">Customer Care</h3>
+          <ul class="space-y-0.5">
+            <li class="text-gray-400 leading-6 text-sm"><a class="hover:text-yellow-400" href="#">Contact Us</a></li>
+            <li class="text-gray-400 leading-6 text-sm"><a class="hover:text-yellow-400" href="#">How It Works</a>
+            </li>
+            <li class="text-gray-400 leading-6 text-sm"><a class="hover:text-yellow-400" href="#">FAQs</a></li>
+            <li class="text-gray-400 leading-6 text-sm"><a class="hover:text-yellow-400" href="#">Course Info</a></li>
+            <li class="text-gray-400 leading-6 text-sm"><a class="hover:text-yellow-400" href="#">Schedule</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-bold text-[1rem] pb-2">Get To Know Us</h3>
+          <ul class="space-y-0.5">
+            <li class="text-gray-400 leading-6 text-sm"><a class="hover:text-yellow-400" href="#">About</a></li>
+            <li class="text-gray-400 leading-6 text-sm"><a class="hover:text-yellow-400" href="#">Policies</a></li>
+            <li class="text-gray-400 leading-6 text-sm"><a class="hover:text-yellow-400" href="#">Careers</a></li>
+            <li class="text-gray-400 leading-6 text-sm"><a class="hover:text-yellow-400" href="#">Press</a></li>
+            <li class="text-gray-400 leading-6 text-sm"><a class="hover:text-yellow-400" href="#">Developers</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-bold text-[1rem] pb-2">Ways To Shop</h3>
+          <ul class="space-y-0.5">
+            <li class="text-gray-400 leading-6 text-sm"><a class="hover:text-yellow-400" href="#">Loyalty Club</a>
+            </li>
+            <li class="text-gray-400 leading-6 text-sm"><a class="hover:text-yellow-400" href="#">Promos</a></li>
+            <li class="text-gray-400 leading-6 text-sm"><a class="hover:text-yellow-400" href="#">Sitemap</a></li>
+            <li class="text-gray-400 leading-6 text-sm"><a class="hover:text-yellow-400" href="#">Affiliates</a></li>
+          </ul>
+        </div>
+      </div>
+      <span class="w-full h-[1px] bg-gray-500 block"></span>
+      <!-- Footer Copyright -->
+      <div
+        class="container mx-auto bg-purple-900 px-4 space-y-6 pb-4 flex flex-col md:flex-row md:justify-between md:items-center md:px-12 lg:px-16 xl:pl-24">
+        <div class="text-white order-3 md:order-1">
+          <span class="block pt-4 text-[.8rem] text-gray-400 ">Copyright &copy; 2022 by RLMR</span>
+          <span class="block text-[.8rem] text-gray-400 ">All Rights Reserved.</span>
+        </div>
+        <span class="max-w-[150px] order-1 md:order-2">
+          <a href="#home"><img src="./assets/images/langio-white.png" aria-hidden="true" class="h-10 object-cover"
+              alt="" loading="lazy" decoding="async"></a>
+        </span>
+        <div class="flex items-center order-2 md:order-3">
+          <span class="pr-2 text-gray-400">Follow Us:</span>
+          <span class="w-6 h-6 hover:bg-pink-400 flex justify-center items-center text-gray-300"><i
+              class="fa-brands fa-facebook cursor-pointer"></i></span>
+          <span class="w-6 h-6 hover:bg-pink-400 flex justify-center items-center text-gray-300"><i
+              class="fa-brands fa-twitter cursor-pointer"></i></span>
+          <span class="w-6 h-6 hover:bg-pink-400 flex justify-center items-center text-gray-300"><i
+              class="fa-brands fa-instagram cursor-pointer"></i></span>
+          <span class="w-6 h-6 hover:bg-pink-400 flex justify-center items-center text-gray-300"><i
+              class="fa-brands fa-linkedin cursor-pointer"></i></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+</html>
